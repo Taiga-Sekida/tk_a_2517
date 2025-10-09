@@ -1,7 +1,0 @@
-# Dockerfile for API
-FROM node:16
-WORKDIR /app
-COPY ./api/package.json ./
-RUN npm install
-COPY ./api ./
-CMD ["npm", "run", "dev"]
